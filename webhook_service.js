@@ -41,6 +41,7 @@ var logic_proccessor=function(requestBody,parameterscontextout){
     //store the action in context
     parameterscontextout["action"]=requestBody.result.action;
     parameterscontextout["log_id"]=requestBody.sessionId+" "+ requestBody.id +" ==>> ";
+    parameterscontextout["debug_new"]="new";
     //set next event to fire to empty (not to fire)
     parameterscontextout["fire_event"]="";
     //set next infographics to no infographics
