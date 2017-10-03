@@ -16,8 +16,6 @@ var webhook_processor=function (req, res) {
 
 
     try {
-        
-
         var response=webhook_service.response(req.body);
         return res.json(response);
 
