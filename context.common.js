@@ -190,7 +190,7 @@ module.exports = {
     //    .setAsFeedback() // sets the message as feedback from the user
     //    .setAsNotFeedback() // sets the message as a regular message -- this is the default
         .setUserId(sessionId) // a unique string identifying the user which the bot is interacting with
-        .setVersion('1.0'); // the version that the deployed bot is
+        .setVersion('2.0'); // the version that the deployed bot is
         // if it is agent or person
         if(type!=messageId){
             msg

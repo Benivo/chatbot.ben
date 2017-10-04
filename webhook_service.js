@@ -79,7 +79,6 @@ var logic_proccessor=function(requestBody,parameterscontextout){
 
     // if this one is not based on event so add analitics
     if(parameterscontextout["one_before_fire_event"]==""){
-        console.log("yes analytics");
         context_common.intent_analytics(requestBody,speech);
     }
 
