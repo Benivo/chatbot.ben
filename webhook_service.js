@@ -42,7 +42,7 @@ var logic_proccessor=function(requestBody,parameterscontextout){
     parameterscontextout["action"]=requestBody.result.action;
     parameterscontextout["log_id"]=requestBody.sessionId+" "+ requestBody.id +" ==>> ";
     // store the previous "fire event"
-    parameterscontextout["one_before_fire_event"]=parameterscontextout["fire_event"];
+    parameterscontextout["one_before_fire_event"]=parameterscontextout["fire_event"] || "";
     //set next event to fire to empty (not to fire)
     parameterscontextout["fire_event"]="";
     //set next infographics to no infographics
@@ -79,7 +79,7 @@ var logic_proccessor=function(requestBody,parameterscontextout){
 
     // if this one is not based on event so add analitics
     if(parameterscontextout["one_before_fire_event"]==""){
-        console.log("yes analitics");
+        console.log("yes analytics");
         context_common.intent_analytics(requestBody,speech);
     }
 
