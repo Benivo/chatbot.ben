@@ -118,6 +118,14 @@ module.exports = {
         rent=area_data.Non_SI_room_rent;
     }
     return rent;
+  }, 
+  get_all_contexts(requestBody){
+    let all_contexts=jsonQuery('result.contexts[name]', {
+        data: requestBody
+    }).value;
+    
+  
+    return all_contexts;
   },
 // get data for original country
   get_original_country_data(requestBody){

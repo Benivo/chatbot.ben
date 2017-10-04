@@ -53,8 +53,11 @@ var logic_proccessor=function(requestBody,parameterscontextout){
     
 
     console.log(parameterscontextout["log_id"]+"action "+requestBody.result.action);
-    console.log(parameterscontextout["log_id"]+"resolvedQuery "+requestBody.result.resolvedQuery);
     
+    const context_common = require('./context.common.js');
+    console.log(parameterscontextout["log_id"]+"contexts: "+    context_common.get_all_contexts(requestBody));
+    
+    console.log(parameterscontextout["log_id"]+"resolvedQuery "+requestBody.result.resolvedQuery);
     console.log(parameterscontextout["log_id"]+"requestBody "+JSON.stringify(requestBody));
     // if neccesary excute business rules and store results in context 
     try
@@ -71,7 +74,6 @@ var logic_proccessor=function(requestBody,parameterscontextout){
     // build the speech to the user
     speech = getSpeech(template, parameterscontextout);
 
-    const context_common = require('./context.common.js');
     context_common.intent_analytics(requestBody,speech);
 
     let retval={
