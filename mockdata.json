@@ -1,81 +1,200 @@
 {
-  "id": "a86fb320-add0-4dc0-af2c-a1bf7dd63504",
-  "timestamp": "2017-10-03T07:24:45.734Z",
+  "id": "b06c1413-2b6f-4d8c-9a64-d8c0b1ea6804",
+  "timestamp": "2017-10-04T15:34:01.732Z",
   "lang": "en",
   "result": {
     "source": "agent",
-    "resolvedQuery": "original_city_question",
+    "resolvedQuery": "no",
     "speech": "",
-    "action": "ben.original_city.question",
+    "action": "ben.groceries.question.tochange.no",
     "actionIncomplete": false,
     "parameters": {},
     "contexts": [
       {
+        "name": "bengroceriesquestion-followup",
+        "parameters": {
+          "TimesAWeek": "0",
+          "TimesAWeek.original": "never"
+        },
+        "lifespan": 1
+      },
+      {
+        "name": "not_required_rent_summary",
+        "parameters": {
+          "TimesAWeek": "0",
+          "TimesAWeek.original": "never"
+        },
+        "lifespan": 93
+      },
+      {
         "name": "datakeeper",
         "parameters": {
-          "your_company": "Goppa",
-          "fire_event": "original_city_question",
-          "Infographics": {},
+          "log_id": "d7faa4f9-dd13-95f2-6998-75b426d1a6a1 b3f37e41-6fe6-4907-ac66-e7bc80906999 ==>> ",
+          "fire_event": "",
+          "area_to_stay.original": "Moorgate",
+          "Infographics": {
+            "number": 7,
+            "conversion_rate": 1.13,
+            "original_currency": "Euro",
+            "original_currency_sign": "€",
+            "distination_currency": "Pound",
+            "distination_currency_sign": "£",
+            "data_infographic": {
+              "rent_cost": 800,
+              "groceries_cost": 404
+            }
+          },
+          "geo-city": "",
           "user_name": "John",
-          "action": "ben.original_city.enterance",
+          "area_to_stay": [
+            "Shoreditch"
+          ],
+          "commutinggroceries_amount_text": "I've added ‎£404 to your expenses",
+          "rent_cost": 800,
+          "any": [],
+          "original_city": "Berlin",
+          "your_company": "Goppa",
+          "user_language_Hello": "Hallo",
+          "TimesAWeek": "0",
+          "flattype_to_stay.original": "room",
+          "TimesAWeek.original": "never",
+          "user_language_Goodbye": "Auf Wiedersehen",
+          "action": "ben.groceries.question.tochange",
+          "original_city.original": "Berlin",
+          "geo-city.original": "",
+          "any.original": "",
+          "flattype_to_stay": [
+            "room"
+          ],
+          "user_language_Great": "Groß",
           "distination_city": "London"
         },
         "lifespan": 99
       },
       {
-        "name": "required_rent_summary",
-        "parameters": {},
-        "lifespan": 98
+        "name": "not_required_rent_flattype",
+        "parameters": {
+          "TimesAWeek": "0",
+          "flattype_to_stay.original": "room",
+          "TimesAWeek.original": "never",
+          "flattype_to_stay": [
+            "room"
+          ]
+        },
+        "lifespan": 91
+      },
+      {
+        "name": "not_required_groceries",
+        "parameters": {
+          "TimesAWeek": "0",
+          "TimesAWeek.original": "never"
+        },
+        "lifespan": 99
       },
       {
         "name": "required_grocery",
-        "parameters": {},
-        "lifespan": 98
+        "parameters": {
+          "original_city": "Berlin",
+          "area_to_stay.original": "Moorgate",
+          "TimesAWeek": "0",
+          "flattype_to_stay.original": "room",
+          "geo-city": "",
+          "TimesAWeek.original": "never",
+          "area_to_stay": [
+            "Shoreditch"
+          ],
+          "original_city.original": "Berlin",
+          "geo-city.original": "",
+          "any.original": "",
+          "flattype_to_stay": [
+            "room"
+          ],
+          "any": []
+        },
+        "lifespan": 81
       },
       {
         "name": "required_transportation",
-        "parameters": {},
-        "lifespan": 98
+        "parameters": {
+          "original_city": "Berlin",
+          "area_to_stay.original": "Moorgate",
+          "TimesAWeek": "0",
+          "flattype_to_stay.original": "room",
+          "geo-city": "",
+          "TimesAWeek.original": "never",
+          "area_to_stay": [
+            "Shoreditch"
+          ],
+          "original_city.original": "Berlin",
+          "geo-city.original": "",
+          "any.original": "",
+          "flattype_to_stay": [
+            "room"
+          ],
+          "any": []
+        },
+        "lifespan": 81
       },
       {
-        "name": "required_rent_area",
-        "parameters": {},
-        "lifespan": 98
+        "name": "bengroceriesquestiontochange-followup",
+        "parameters": {
+          "TimesAWeek": "0",
+          "TimesAWeek.original": "never"
+        },
+        "lifespan": 1
       },
       {
         "name": "not_required_city_from",
-        "parameters": {},
-        "lifespan": 100
+        "parameters": {
+          "original_city": "Berlin",
+          "area_to_stay.original": "Moorgate",
+          "TimesAWeek": "0",
+          "flattype_to_stay.original": "room",
+          "geo-city": "",
+          "TimesAWeek.original": "never",
+          "area_to_stay": [
+            "Shoreditch"
+          ],
+          "original_city.original": "Berlin",
+          "geo-city.original": "",
+          "any.original": "",
+          "flattype_to_stay": [
+            "room"
+          ],
+          "any": []
+        },
+        "lifespan": 83
       },
       {
-        "name": "benoriginal_cityquestion-followup",
-        "parameters": {},
-        "lifespan": 2
-      },
-      {
-        "name": "original_city_question",
-        "parameters": {},
-        "lifespan": 0
-      },
-      {
-        "name": "required_rent_flattype",
-        "parameters": {},
-        "lifespan": 98
+        "name": "not_required_rent_area",
+        "parameters": {
+          "area_to_stay.original": "Moorgate",
+          "TimesAWeek": "0",
+          "flattype_to_stay.original": "room",
+          "TimesAWeek.original": "never",
+          "area_to_stay": [
+            "Shoreditch"
+          ],
+          "flattype_to_stay": [
+            "room"
+          ]
+        },
+        "lifespan": 88
       }
     ],
     "metadata": {
-      "intentId": "fc45e1af-dbfa-4a00-95a1-7e6f9128e603",
+      "intentId": "91ca5f61-58e8-4dd1-8b44-c0da347bdbf9",
       "webhookUsed": "true",
       "webhookForSlotFillingUsed": "false",
-      "intentName": "ben.original_city.question"
+      "intentName": "ben.groceries.question.tochange.no"
     },
     "fulfillment": {
-      "speech": "Where are you from?",
+      "speech": "",
       "messages": [
         {
           "type": 0,
-          "id": "ea788089-dd0c-41ad-8815-895943b49494",
-          "speech": "Where are you from?"
+          "id": "466ced1f-17b7-4366-bcfc-438b5579aeaa",
+          "speech": ""
         }
       ]
     },
@@ -85,5 +204,5 @@
     "code": 200,
     "errorType": "success"
   },
-  "sessionId": "f12fddb9-57a7-5202-8a99-5dc57669ccca"
+  "sessionId": "d7faa4f9-dd13-95f2-6998-75b426d1a6a1"
 }
