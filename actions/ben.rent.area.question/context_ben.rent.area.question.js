@@ -15,7 +15,7 @@ module.exports = {
     //let from_city_food_cost=jsonQuery('rent[**].cities[name='+parameterscontextout["from_city"]+' ]', {
     //    data: data
     //}).value.food_cost;
-
+    infographics.infographic_2(parameterscontextout,requestBody);
     SetAreaEntityValues(requestBody.sessionId,[]);
 
     return parameterscontextout; 

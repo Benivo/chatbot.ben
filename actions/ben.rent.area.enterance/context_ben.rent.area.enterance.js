@@ -10,7 +10,7 @@ module.exports = {
   processor:function(parameterscontextout,requestBody)
   {
     parameterscontextout["fire_event"]="rent_area_question";
-    infographics.infographic_2(parameterscontextout,requestBody);
+
 
     
 
