@@ -16,6 +16,7 @@ module.exports = {
         distination_currency:"Pound",
         distination_currency_sign:"£",
         data_infographic:{
+            user_name:parameterscontextout["user_name"],
             country_data:country_data
         }
     };
@@ -34,6 +35,7 @@ module.exports = {
 
   infographic_3(parameterscontextout,requestBody){
     let area_data=context_common.get_area_data(requestBody);
+    area_data.user_name=parameterscontextout["user_name"];
 
     parameterscontextout["Infographics"]={
         number:3,
@@ -69,6 +71,7 @@ module.exports = {
 
   infographic_5(parameterscontextout,requestBody){
     let area_data=context_common.get_area_data(requestBody);
+    area_data.user_name=parameterscontextout["user_name"];
 
     parameterscontextout["Infographics"]={
         number:5,
@@ -83,6 +86,7 @@ module.exports = {
   
   infographic_6(parameterscontextout,requestBody){
     let grocerries_cost=data.grocerries_cost;
+    grocerries_cost.user_name=parameterscontextout["user_name"];
     parameterscontextout["Infographics"]={
         number:6,
         conversion_rate:1.13,
