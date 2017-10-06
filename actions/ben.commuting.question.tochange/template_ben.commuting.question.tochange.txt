@@ -1,3 +1,2 @@
 {commutinggroceries_amount_text}
-$$$
-Are you happy with it, or do you want to pick another method?
+$$$Are you happy with it, or do you want to pick another method?

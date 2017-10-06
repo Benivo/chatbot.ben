@@ -1,3 +1,2 @@
 {commutinggroceries_amount_text}
-$$$
-Do you want to see what your budget would look like if you cooked at home more or less?
+$$$Do you want to see what your budget would look like if you cooked at home more or less?
