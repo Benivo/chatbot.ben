@@ -16,7 +16,7 @@ module.exports = {
     parameterscontextout["user_language_Goodbye"]=original_country_data.Goodbye;
     parameterscontextout["user_language_Great"]=original_country_data.Great;
     
-    parameterscontextout["original_capital"]=context_common.get_area_data(requestBody).Capital_cities;
+    parameterscontextout["original_capital"]=context_common.get_original_country_data(requestBody).Capital_cities;
 
     infographics.infographic_1(parameterscontextout,requestBody);
 
