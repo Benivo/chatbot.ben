@@ -53,7 +53,7 @@ module.exports = {
     let data_infographic={
         rent:rent,
         destination_city:parameterscontextout["distination_city"],
-        name:parameterscontextout["user_name"]
+        user_name:parameterscontextout["user_name"]
     };
 
     parameterscontextout["Infographics"]={
@@ -99,6 +99,7 @@ module.exports = {
     let cost={
         rent_cost:context_common.get_rent_cost(requestBody),
         transportation_cost:context_common.get_transportation_cost(requestBody),
+        user_name:parameterscontextout["user_name"],
         groceries_cost:context_common.get_groceries_cost(requestBody)
     }; 
 
