@@ -135,7 +135,7 @@ module.exports = {
      // use API (sync request) to get country for the original city
 
     let res=this.get_source_at('http://gd.geobytes.com/AutoCompleteCity?callback=?&q='+original_city)
-
+    console.log(parameterscontextout["log_id"]+" countries from original city " +res);
     let countries=JSON.parse(res.substr(2).slice(0, -2));
 
     let country="";
@@ -147,6 +147,7 @@ module.exports = {
                 if(country==""){
                     // extract just the country from the response
                     country=element.split(',')[element.split(',').length-1].substr(1);
+                    console.log(parameterscontextout["log_id"]+" country from original city " +country);
                 }
             }
         }
