@@ -13,15 +13,18 @@ restService.use(bodyParser.json());
  
 var webhook_processor=function (req, res) {
 
-
+     console.log("request start")
 
     try {
         
         var response=webhook_service.response(req.body);
+        console.log("request end")
+
         return res.json(response);
 
     } catch (err) {
-            console.error("Can't process request", err);
+        console.error("Can't process request", err);
+        console.log("request end")
 
         return res.status(400).json({
             status: {
