@@ -1,199 +1,110 @@
 {
-  "id": "b06c1413-2b6f-4d8c-9a64-d8c0b1ea6804",
-  "timestamp": "2017-10-04T15:34:01.732Z",
+  "id": "c6972c24-318e-45bb-95f9-23f1328a262e",
+  "timestamp": "2017-10-10T13:08:59.707Z",
   "lang": "en",
   "result": {
     "source": "agent",
-    "resolvedQuery": "no",
+    "resolvedQuery": "I am from Porto",
     "speech": "",
-    "action": "ben.groceries.question.tochange.no",
+    "action": "ben.original_city.pick",
     "actionIncomplete": false,
-    "parameters": {},
+    "parameters": {
+      "original_city": "Porto"
+    },
     "contexts": [
-      {
-        "name": "bengroceriesquestion-followup",
-        "parameters": {
-          "TimesAWeek": "0",
-          "TimesAWeek.original": "never"
-        },
-        "lifespan": 1
-      },
-      {
-        "name": "not_required_rent_summary",
-        "parameters": {
-          "TimesAWeek": "0",
-          "TimesAWeek.original": "never"
-        },
-        "lifespan": 93
-      },
       {
         "name": "datakeeper",
         "parameters": {
-          "log_id": "d7faa4f9-dd13-95f2-6998-75b426d1a6a1 b3f37e41-6fe6-4907-ac66-e7bc80906999 ==>> ",
-          "fire_event": "",
-          "area_to_stay.original": "Moorgate",
-          "Infographics": {
-            "number": 7,
-            "conversion_rate": 1.13,
-            "original_currency": "Euro",
-            "original_currency_sign": "€",
-            "distination_currency": "Pound",
-            "distination_currency_sign": "£",
-            "data_infographic": {
-              "rent_cost": 800,
-              "groceries_cost": 404
-            }
-          },
-          "geo-city": "",
-          "user_name": "John",
-          "area_to_stay": [
-            "Shoreditch"
-          ],
-          "commutinggroceries_amount_text": "I've added ‎£404 to your expenses",
-          "rent_cost": 800,
-          "any": [],
-          "original_city": "Berlin",
+          "original_city": "Porto",
           "your_company": "Goppa",
-          "user_language_Hello": "Hallo",
-          "TimesAWeek": "0",
-          "flattype_to_stay.original": "room",
-          "TimesAWeek.original": "never",
-          "user_language_Goodbye": "Auf Wiedersehen",
-          "action": "ben.groceries.question.tochange",
-          "original_city.original": "Berlin",
-          "geo-city.original": "",
-          "any.original": "",
-          "flattype_to_stay": [
-            "room"
-          ],
-          "user_language_Great": "Groß",
+          "log_id": "c6d507fd-7d2f-a1fd-ade8-6fa5366fb64d 11851f94-b128-486b-b074-0db09caac0a9 ==>> ",
+          "fire_event": "",
+          "Infographics": {},
+          "user_name": "John",
+          "action": "ben.original_city.question",
+          "original_city.original": "Porto",
+          "one_before_fire_event": "original_city_question",
           "distination_city": "London"
         },
         "lifespan": 99
       },
       {
-        "name": "not_required_rent_flattype",
+        "name": "required_rent_summary",
         "parameters": {
-          "TimesAWeek": "0",
-          "flattype_to_stay.original": "room",
-          "TimesAWeek.original": "never",
-          "flattype_to_stay": [
-            "room"
-          ]
+          "original_city": "Porto",
+          "original_city.original": "Porto"
         },
-        "lifespan": 91
+        "lifespan": 97
       },
       {
-        "name": "not_required_groceries",
+        "name": "benoriginal_citypick-followup",
         "parameters": {
-          "TimesAWeek": "0",
-          "TimesAWeek.original": "never"
+          "original_city": "Porto",
+          "original_city.original": "Porto"
         },
-        "lifespan": 99
-      },
-      {
-        "name": "required_grocery",
-        "parameters": {
-          "original_city": "Berlin",
-          "area_to_stay.original": "Moorgate",
-          "TimesAWeek": "0",
-          "flattype_to_stay.original": "room",
-          "geo-city": "",
-          "TimesAWeek.original": "never",
-          "area_to_stay": [
-            "Shoreditch"
-          ],
-          "original_city.original": "Berlin",
-          "geo-city.original": "",
-          "any.original": "",
-          "flattype_to_stay": [
-            "room"
-          ],
-          "any": []
-        },
-        "lifespan": 81
+        "lifespan": 2
       },
       {
         "name": "required_transportation",
         "parameters": {
-          "original_city": "Berlin",
-          "area_to_stay.original": "Moorgate",
-          "TimesAWeek": "0",
-          "flattype_to_stay.original": "room",
-          "geo-city": "",
-          "TimesAWeek.original": "never",
-          "area_to_stay": [
-            "Shoreditch"
-          ],
-          "original_city.original": "Berlin",
-          "geo-city.original": "",
-          "any.original": "",
-          "flattype_to_stay": [
-            "room"
-          ],
-          "any": []
+          "original_city": "Porto",
+          "original_city.original": "Porto"
         },
-        "lifespan": 81
+        "lifespan": 97
       },
       {
-        "name": "bengroceriesquestiontochange-followup",
+        "name": "required_grocery",
         "parameters": {
-          "TimesAWeek": "0",
-          "TimesAWeek.original": "never"
+          "original_city": "Porto",
+          "original_city.original": "Porto"
         },
-        "lifespan": 1
+        "lifespan": 97
+      },
+      {
+        "name": "required_rent_area",
+        "parameters": {
+          "original_city": "Porto",
+          "original_city.original": "Porto"
+        },
+        "lifespan": 97
       },
       {
         "name": "not_required_city_from",
         "parameters": {
-          "original_city": "Berlin",
-          "area_to_stay.original": "Moorgate",
-          "TimesAWeek": "0",
-          "flattype_to_stay.original": "room",
-          "geo-city": "",
-          "TimesAWeek.original": "never",
-          "area_to_stay": [
-            "Shoreditch"
-          ],
-          "original_city.original": "Berlin",
-          "geo-city.original": "",
-          "any.original": "",
-          "flattype_to_stay": [
-            "room"
-          ],
-          "any": []
+          "original_city": "Porto",
+          "original_city.original": "Porto"
         },
-        "lifespan": 83
+        "lifespan": 100
       },
       {
-        "name": "not_required_rent_area",
+        "name": "benoriginal_cityquestion-followup",
         "parameters": {
-          "area_to_stay.original": "Moorgate",
-          "TimesAWeek": "0",
-          "flattype_to_stay.original": "room",
-          "TimesAWeek.original": "never",
-          "area_to_stay": [
-            "Shoreditch"
-          ],
-          "flattype_to_stay": [
-            "room"
-          ]
+          "original_city": "Porto",
+          "original_city.original": "Porto"
         },
-        "lifespan": 88
+        "lifespan": 1
+      },
+      {
+        "name": "required_rent_flattype",
+        "parameters": {
+          "original_city": "Porto",
+          "original_city.original": "Porto"
+        },
+        "lifespan": 97
       }
     ],
     "metadata": {
-      "intentId": "91ca5f61-58e8-4dd1-8b44-c0da347bdbf9",
+      "intentId": "64f58053-4024-4874-b1e7-8784ab57075e",
       "webhookUsed": "true",
       "webhookForSlotFillingUsed": "false",
-      "intentName": "ben.groceries.question.tochange.no"
+      "intentName": "ben.original_city.pick"
     },
     "fulfillment": {
       "speech": "",
       "messages": [
         {
           "type": 0,
-          "id": "466ced1f-17b7-4366-bcfc-438b5579aeaa",
+          "id": "5e67b16a-c1e6-49d7-bd00-8954e8763634",
           "speech": ""
         }
       ]
@@ -204,5 +115,5 @@
     "code": 200,
     "errorType": "success"
   },
-  "sessionId": "d7faa4f9-dd13-95f2-6998-75b426d1a6a1"
+  "sessionId": "c6d507fd-7d2f-a1fd-ade8-6fa5366fb64d"
 }

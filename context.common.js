@@ -144,10 +144,12 @@ module.exports = {
     countries.forEach(function(element) {
         if(!element.includes("United States")){
             if(!element.includes("Canada")){
-                if(country==""){
-                    // extract just the country from the response
-                    country=element.split(',')[element.split(',').length-1].substr(1);
-                    console.log(parameterscontextout["log_id"]+" country from original city " +country);
+                if(element.split(",",1)[0].toLowerCase()==original_city.toLowerCase()){
+                    if(country==""){
+                        // extract just the country from the response
+                        country=element.split(',')[element.split(',').length-1].substr(1);
+                        console.log(parameterscontextout["log_id"]+" country from original city " +country);
+                    }
                 }
             }
         }
