@@ -129,7 +129,7 @@ module.exports = {
     return all_contexts;
   },
 // get data for original country
-  get_original_country_data(requestBody){
+  get_original_country_data(requestBody,parameterscontextout){
         // examples of query context
     let original_city=this.get_parameters(requestBody).original_city;
      // use API (sync request) to get country for the original city

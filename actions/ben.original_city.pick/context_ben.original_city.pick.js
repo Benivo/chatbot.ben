@@ -11,7 +11,7 @@ module.exports = {
   processor:function(parameterscontextout,requestBody)
   {
     // set different languages 
-    let original_country_data=context_common.get_original_country_data(requestBody);
+    let original_country_data=context_common.get_original_country_data(requestBody,parameterscontextout);
     parameterscontextout["user_language_Hello"]=original_country_data.Hello;
     parameterscontextout["user_language_Goodbye"]=original_country_data.Goodbye;
     parameterscontextout["user_language_Great"]=original_country_data.Great;

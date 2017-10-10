@@ -6,7 +6,7 @@ const context_common = require('./context.common.js');
 module.exports = {
   infographic_1(parameterscontextout,requestBody){
 
-  let country_data=context_common.get_original_country_data(requestBody);
+  let country_data=context_common.get_original_country_data(requestBody,parameterscontextout);
 
     parameterscontextout["Infographics"]={
         number:1,
